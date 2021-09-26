@@ -1,0 +1,33 @@
+public class Solution 
+{
+    public int solve(int[] A) 
+    {
+        int i,count=0,max=Integer.MIN_VALUE,min=Integer.MAX_VALUE,n1=A.length;
+        for(i=0;i<n1;i++)
+        {
+            
+        }
+        for(i=0;i<n1;i++)
+        {
+            if(max<A[i])
+            {
+                max=A[i];
+            }
+        }
+         for(i=0;i<n1;i++)
+        {
+            if(min>A[i])
+            {
+                min=A[i];
+            }
+        }
+         for(i=0;i<n1;i++)
+        {
+            if(max>A[i] && min<A[i])
+            {
+                count ++;
+            }
+        }
+        return count;
+    }
+}
