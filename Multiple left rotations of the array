@@ -1,0 +1,21 @@
+public class Solution 
+{
+    public int[][] solve(int[] A, int[] B) 
+    {
+    int i,j,n2=B.length,n1=A.length;
+    int C[][]= new int[n2][n1];
+   
+    for(j=0;j<n2;j++)
+    {
+        if(B[j]>n1)
+        {
+            B[j]=B[j]%n1;
+        }
+        for(i=0;i<n1;i++)
+        {   
+            int temp=(i+n1-B[j])%n1;
+            C[j][temp]=A[i];
+        }
+    }
+    return C;
+    }
