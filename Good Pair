@@ -1,0 +1,22 @@
+int solve(int* A, int n1, int B) 
+{
+    int i,j,count=0;
+    for(i=0;i<n1;i++)
+    {
+        j=i+1;
+        while(j<n1)
+        {
+            if(A[i]+A[j]==B)
+            {
+                count=1;
+                break;
+            }
+            j++;
+        }
+        if(count==1)
+        {
+            break;
+        }
+    }
+    return count;
+}
