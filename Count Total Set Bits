@@ -1,0 +1,22 @@
+public class Solution 
+{
+    public int solve(int A) 
+    {
+        long count=0;
+        count=Count_SetBit(A);
+        return (int)count;
+    }
+    public long Count_SetBit(int A)
+    {
+        if(A==0 || A==1)
+        {
+            return A;
+        }
+        long x=(long)(Math.log(A) / Math.log(2));
+        long sum=0;
+        sum=((long)Math.pow(2,x)/2)*x;
+        sum=sum+(A-((long)Math.pow(2,x)-1));
+        sum=sum+Count_SetBit(A-(int)Math.pow(2,x));
+        return sum%1000000007;
+    }
+}
