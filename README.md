@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @sunnyjp
+- 👋 Hi, I’m @Jayaprakash
 - 👀 I’m interested in writing programs
 - 🌱 I’m currently learning to write basic codes to increase my problem solving skills
 - 💞️ I’m looking to collaborate on ...
