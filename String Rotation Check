@@ -1,0 +1,50 @@
+public boolean stringRotation(String str1,String str2)
+    {
+        if(str1.length()!=str2.length)
+        {
+          return 0;
+        }
+          int i=0,j=0,pos=0,len=str1.length();
+          while(i<len)
+          {
+            if(str1.charAt(i)==str2.charAt(0))
+            {
+              pos=i;
+              break;
+            }
+            else
+            {
+              i++;
+              if(i==len)
+              {
+                return 0;
+              }
+            }
+          }
+          while(i<len && j<len)
+          {
+            if(str1.charAt(i)==str2.charAt(j))
+            {
+              i++;
+              j++;
+            }
+            else
+            {
+              return 0;
+            }
+          }
+          i=0;
+          while(i<pos && j<len)
+          {
+            if(str1.charAt(i)==str2.charAt(j))
+            {
+              i++;
+              j++;
+            }
+            else
+            {
+              return 0;
+            }
+          }
+		      return 1;
+    }
