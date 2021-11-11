@@ -45,7 +45,7 @@ public boolean stringRotation(String str1,String str2)
 			}
 			else
 			{
-				res=false;
+				return false;
 			}
 		}
 
